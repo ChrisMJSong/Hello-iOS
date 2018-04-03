@@ -1,4 +1,7 @@
 language: swift
 osx_image: xcode9
-xcode_project: SwiftSample.xcodeproj
+xcode_project: SwiftSample.xcworkspace
 xcode_scheme: SwiftSample
+
+# pod install
+pod install
