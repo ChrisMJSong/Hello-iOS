@@ -3,5 +3,5 @@ osx_image: xcode9
 xcode_project: SwiftSample.xcworkspace
 xcode_scheme: SwiftSample
 
-# pod install
-pod install
+before_install:
+- pod install # --repo-update # if want latest pod library, append repo update. 
