@@ -11,6 +11,8 @@ def shared_pods
   pod 'Firebase/Core'
   pod 'Fabric', '~> 1.7.2'
   pod 'Crashlytics', '~> 3.9.3'
+  pod 'SwiftyGif', '~> 4.1'
+  pod 'YLProgressBar', '~> 3.10'
 end
 
 target 'SwiftSample' do

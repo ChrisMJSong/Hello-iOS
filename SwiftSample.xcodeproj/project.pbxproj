@@ -13,6 +13,8 @@
 		83D895FF2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D896022073D6BD000DA172 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D896012073D6BD000DA172 /* IntroViewController.swift */; };
 		83D896032073D6BD000DA172 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D896012073D6BD000DA172 /* IntroViewController.swift */; };
+		83D896072073EF63000DA172 /* imgLion.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83D896062073EF63000DA172 /* imgLion.gif */; };
+		83D896082073EF63000DA172 /* imgLion.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83D896062073EF63000DA172 /* imgLion.gif */; };
 		83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBFD29207281F900D6A96F /* AppDelegate.swift */; };
 		83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBFD2B207281F900D6A96F /* ViewController.swift */; };
 		83EBFD2F207281F900D6A96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EBFD2D207281F900D6A96F /* Main.storyboard */; };
@@ -43,6 +45,7 @@
 		21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83D896012073D6BD000DA172 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		83D896062073EF63000DA172 /* imgLion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imgLion.gif; sourceTree = "<group>"; };
 		83EBFD26207281F900D6A96F /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EBFD29207281F900D6A96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EBFD2B207281F900D6A96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				83D895F92073BBF7000DA172 /* GoogleService */,
+				83D896042073EF63000DA172 /* Images */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,6 +137,22 @@
 				83D896012073D6BD000DA172 /* IntroViewController.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		83D896042073EF63000DA172 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				83D896052073EF63000DA172 /* GIF */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		83D896052073EF63000DA172 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				83D896062073EF63000DA172 /* imgLion.gif */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 		83EBFD1D207281F900D6A96F = {
@@ -301,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D896072073EF63000DA172 /* imgLion.gif in Resources */,
 				83EBFD34207281F900D6A96F /* LaunchScreen.storyboard in Resources */,
 				83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */,
 				83EBFD31207281F900D6A96F /* Assets.xcassets in Resources */,
@@ -320,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D896082073EF63000DA172 /* imgLion.gif in Resources */,
 				83D895FF2073BBF7000DA172 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,11 +389,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

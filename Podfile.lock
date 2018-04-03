@@ -22,11 +22,15 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftyGif (4.1.0)
+  - YLProgressBar (3.10.2)
 
 DEPENDENCIES:
   - Crashlytics (~> 3.9.3)
   - Fabric (~> 1.7.2)
   - Firebase/Core
+  - SwiftyGif (~> 4.1)
+  - YLProgressBar (~> 3.10)
 
 SPEC CHECKSUMS:
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
@@ -37,7 +41,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
+  YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: 60297e3e5ffab64e52a18a1109ca1ac616278ef7
+PODFILE CHECKSUM: 57b3ca86cbc429ddc875d80344b1225381bc5058
 
 COCOAPODS: 1.3.0.beta.3
