@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import SwiftyGif
 
 class IntroViewController: UIViewController {
 
+    @IBOutlet weak var imageViewLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // set gif image into logo imageview
+        let gif = UIImage.init(gifName: "imgLion")
+        imageViewLogo.setGifImage(gif)
     }
 
     override func didReceiveMemoryWarning() {

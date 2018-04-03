@@ -9,20 +9,54 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLion" translatesAutoresizingMaskIntoConstraints="NO" id="ZJF-lP-coX">
+                                <rect key="frame" x="-13" y="183" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="TES-Bz-Xik"/>
+                                    <constraint firstAttribute="height" constant="300" id="jBN-20-l5r"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ci-bg-KoE">
+                                <rect key="frame" x="71" y="90" width="234" height="58.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="42"/>
+                                <color key="textColor" red="0.25946119427680969" green="0.2101643979549408" blue="0.18658778071403503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9990275502204895" green="0.89185702800750732" blue="0.023125579580664635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Ci-bg-KoE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cY-dT-Cod"/>
+                            <constraint firstItem="ZJF-lP-coX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihy-uo-6R4"/>
+                            <constraint firstItem="1Ci-bg-KoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Zau-ZH-hmw"/>
+                            <constraint firstItem="ZJF-lP-coX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mMW-Dl-sun"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageViewLogo" destination="ZJF-lP-coX" id="pYx-bt-gg0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="41.829085457271368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imgLion" width="400" height="300"/>
+    </resources>
 </document>
