@@ -16,6 +16,11 @@ def shared_pods
 end
 
 target 'SwiftSample' do
-  # Pods for GB scheme
+  # Pods for SwiftSample scheme
+    shared_pods
+end
+
+target 'SwiftSampleUITests' do
+  # Pods for SwiftSampleUITests scheme
     shared_pods
 end
