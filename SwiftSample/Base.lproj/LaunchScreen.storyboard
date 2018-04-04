@@ -1,25 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D3w-yL-bEb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="cbm-MJ-xTn">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="D3w-yL-bEb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9pG-HK-LdX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLion" translatesAutoresizingMaskIntoConstraints="NO" id="HHv-Zz-QKc">
+                                <rect key="frame" x="-13" y="183" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="YID-jo-clO"/>
+                                    <constraint firstAttribute="height" constant="300" id="sfE-Rv-c8k"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGD-L2-tz2">
+                                <rect key="frame" x="70" y="90" width="236" height="59"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="42"/>
+                                <color key="textColor" red="0.25946119429999998" green="0.210164398" blue="0.18658778070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9990275502" green="0.891857028" blue="0.02312557958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MGD-L2-tz2" firstAttribute="centerX" secondItem="9pG-HK-LdX" secondAttribute="centerX" id="3wc-tS-NPP"/>
+                            <constraint firstItem="MGD-L2-tz2" firstAttribute="top" secondItem="4wj-bA-RmV" secondAttribute="top" constant="70" id="Zrh-Yy-PSs"/>
+                            <constraint firstItem="HHv-Zz-QKc" firstAttribute="centerX" secondItem="9pG-HK-LdX" secondAttribute="centerX" id="bk9-ZM-Ksk"/>
+                            <constraint firstItem="HHv-Zz-QKc" firstAttribute="centerY" secondItem="9pG-HK-LdX" secondAttribute="centerY" id="xOO-NE-oiJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4wj-bA-RmV"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWk-RP-Gfb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imgLion" width="400" height="300"/>
+    </resources>
 </document>
