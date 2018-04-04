@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		81132711A3409B5EAC0A9563 /* Pods_SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */; };
+		837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE7F20753FB900DFA216 /* DashboardViewController.swift */; };
+		837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE812075416400DFA216 /* DashboardTableViewModel.swift */; };
+		837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE83207542E200DFA216 /* DashboardItem.swift */; };
+		837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE85207544D500DFA216 /* DashboardTableViewCell.swift */; };
 		83A3E20E2074E03800392197 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E1FD2074E03800392197 /* SnapshotHelper.swift */; };
 		83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D895FE2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		0E84550D6294FB3BBB0E240F /* Pods_SwiftSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837EEE7F20753FB900DFA216 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		837EEE812075416400DFA216 /* DashboardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewModel.swift; sourceTree = "<group>"; };
+		837EEE83207542E200DFA216 /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
+		837EEE85207544D500DFA216 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		83A3E1FD2074E03800392197 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83D896012073D6BD000DA172 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		837EEE7E20753FB900DFA216 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				837EEE7F20753FB900DFA216 /* DashboardViewController.swift */,
+				837EEE812075416400DFA216 /* DashboardTableViewModel.swift */,
+				837EEE83207542E200DFA216 /* DashboardItem.swift */,
+				837EEE85207544D500DFA216 /* DashboardTableViewCell.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		83A3E1EF2074E03800392197 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +171,7 @@
 		83D895FC2073BBF7000DA172 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				837EEE7E20753FB900DFA216 /* Dashboard */,
 				83D896012073D6BD000DA172 /* IntroViewController.swift */,
 			);
 			path = Classes;
@@ -508,7 +528,11 @@
 			files = (
 				83D896022073D6BD000DA172 /* IntroViewController.swift in Sources */,
 				83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */,
+				837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,
+				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
+				837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */,
+				837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

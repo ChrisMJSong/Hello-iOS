@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="41.829085457271368"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="HXZ-9i-idp">
             <objects>
-                <viewController id="XHH-Pm-f2g" sceneMemberID="viewController">
+                <viewController id="XHH-Pm-f2g" customClass="DashboardViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EZQ-T3-vmT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,6 +97,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XHH-Pm-f2g" id="b0G-cl-VDg"/>
+                                    <outlet property="delegate" destination="XHH-Pm-f2g" id="AZp-dK-TdA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,6 +115,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="27o-Rz-Djm"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="QaX-x1-JWr" id="TMV-Nb-Fcz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezJ-vK-dwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
