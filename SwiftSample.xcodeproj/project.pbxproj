@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81132711A3409B5EAC0A9563 /* Pods_SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */; };
+		83A3E20E2074E03800392197 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E1FD2074E03800392197 /* SnapshotHelper.swift */; };
 		83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D895FE2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D895FF2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		0E84550D6294FB3BBB0E240F /* Pods_SwiftSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A3E1FD2074E03800392197 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83D896012073D6BD000DA172 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		83D896062073EF63000DA172 /* imgLion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imgLion.gif; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			);
 			name = Pods;
 			sourceTree = "<group>";
+		};
+		83A3E1EF2074E03800392197 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				83A3E1FD2074E03800392197 /* SnapshotHelper.swift */,
+			);
+			path = fastlane;
+			sourceTree = SOURCE_ROOT;
 		};
 		83D895F82073BBF7000DA172 /* Resources */ = {
 			isa = PBXGroup;
@@ -190,6 +200,7 @@
 			children = (
 				83D895FC2073BBF7000DA172 /* Classes */,
 				83D895F82073BBF7000DA172 /* Resources */,
+				83A3E1EF2074E03800392197 /* fastlane */,
 				83EBFD29207281F900D6A96F /* AppDelegate.swift */,
 				83EBFD2B207281F900D6A96F /* ViewController.swift */,
 				83EBFD2D207281F900D6A96F /* Main.storyboard */,
@@ -503,6 +514,7 @@
 			files = (
 				83EBFD4A207281F900D6A96F /* SwiftSampleUITests.swift in Sources */,
 				83D896032073D6BD000DA172 /* IntroViewController.swift in Sources */,
+				83A3E20E2074E03800392197 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
