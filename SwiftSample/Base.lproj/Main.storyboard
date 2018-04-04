@@ -47,13 +47,74 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rqC-7X-JbK"/>
                     <connections>
                         <outlet property="imageViewLogo" destination="ZJF-lP-coX" id="pYx-bt-gg0"/>
+                        <segue destination="XHH-Pm-f2g" kind="presentation" identifier="SegueDashboard" modalTransitionStyle="crossDissolve" id="mR1-Mu-UXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="41.829085457271368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HXZ-9i-idp">
+            <objects>
+                <viewController id="XHH-Pm-f2g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZQ-T3-vmT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-Ji-N9D">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-15-g1m">
+                                        <rect key="frame" x="171.5" y="98" width="195.5" height="52"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="37"/>
+                                        <color key="textColor" red="0.25946119429999998" green="0.210164398" blue="0.18658778070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9990275502204895" green="0.89185702800750732" blue="0.023125579580664635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aQo-15-g1m" secondAttribute="trailing" constant="8" id="PEi-ia-bMF"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQo-15-g1m" secondAttribute="bottom" id="a9J-7c-d1Q"/>
+                                    <constraint firstAttribute="height" constant="150" id="gU0-Gn-Fac"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QaX-x1-JWr">
+                                <rect key="frame" x="0.0" y="150" width="375" height="517"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardCell" id="LZY-et-uIq">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LZY-et-uIq" id="EYw-DP-nR0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jNb-Ji-N9D" firstAttribute="trailing" secondItem="27o-Rz-Djm" secondAttribute="trailing" id="6Hr-Y3-abR"/>
+                            <constraint firstItem="27o-Rz-Djm" firstAttribute="trailing" secondItem="QaX-x1-JWr" secondAttribute="trailing" id="Dc3-to-Gnx"/>
+                            <constraint firstItem="jNb-Ji-N9D" firstAttribute="top" secondItem="EZQ-T3-vmT" secondAttribute="top" id="I85-jQ-rwd"/>
+                            <constraint firstItem="27o-Rz-Djm" firstAttribute="bottom" secondItem="QaX-x1-JWr" secondAttribute="bottom" id="T2Q-ys-KbR"/>
+                            <constraint firstItem="jNb-Ji-N9D" firstAttribute="leading" secondItem="27o-Rz-Djm" secondAttribute="leading" id="Whx-Fy-7H5"/>
+                            <constraint firstItem="QaX-x1-JWr" firstAttribute="leading" secondItem="27o-Rz-Djm" secondAttribute="leading" id="abS-pP-nB6"/>
+                            <constraint firstItem="QaX-x1-JWr" firstAttribute="top" secondItem="jNb-Ji-N9D" secondAttribute="bottom" id="hn5-GW-The"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="27o-Rz-Djm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezJ-vK-dwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="41.829085457271368"/>
         </scene>
     </scenes>
     <resources>
