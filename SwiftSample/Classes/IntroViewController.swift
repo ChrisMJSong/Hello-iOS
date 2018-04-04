@@ -12,6 +12,7 @@ import SwiftyGif
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var imageViewLogo: UIImageView!
+    let moveDeleay = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,11 @@ class IntroViewController: UIViewController {
         // set gif image into logo imageview
         let gif = UIImage.init(gifName: "imgLion")
         imageViewLogo.setGifImage(gif)
+        
+        // move to next page
+        DispatchQueue.main.asyncAfter(deadline: (.now() + 2), execute: {
+              self.performSegue(withIdentifier: "SegueDashboard", sender: nil)
+        })
     }
 
     override func didReceiveMemoryWarning() {
