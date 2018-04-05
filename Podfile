@@ -13,6 +13,9 @@ def shared_pods
   pod 'Crashlytics', '~> 3.9.3'
   pod 'SwiftyGif', '~> 4.1'
   pod 'YLProgressBar', '~> 3.10'
+  pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SVProgressHUD', '~> 2.2'
 end
 
 target 'SwiftSample' do

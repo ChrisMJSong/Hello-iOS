@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.1)
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
   - Fabric (1.7.2)
@@ -22,18 +23,24 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SVProgressHUD (2.2.5)
   - SwiftyGif (4.1.0)
+  - SwiftyJSON (4.0.0)
   - YLProgressBar (3.10.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - Crashlytics (~> 3.9.3)
   - Fabric (~> 1.7.2)
   - Firebase/Core
+  - SVProgressHUD (~> 2.2)
   - SwiftyGif (~> 4.1)
+  - SwiftyJSON (~> 4.0)
   - YLProgressBar (~> 3.10)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - Crashlytics
     - Fabric
     - Firebase
@@ -42,10 +49,13 @@ SPEC REPOS:
     - FirebaseInstanceID
     - GoogleToolboxForMac
     - nanopb
+    - SVProgressHUD
     - SwiftyGif
+    - SwiftyJSON
     - YLProgressBar
 
 SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
@@ -54,9 +64,11 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: e9d7b5652db6877d183085401d2c0d321221de02
+PODFILE CHECKSUM: c8a700420727e16d3552dd647f42f1995bfef52c
 
 COCOAPODS: 1.5.0
