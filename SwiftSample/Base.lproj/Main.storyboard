@@ -13,6 +13,9 @@
         <array key="AvenirNext.ttc">
             <string>AvenirNext-BoldItalic</string>
         </array>
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Intro View Controller-->
@@ -83,23 +86,60 @@
                                     <constraint firstAttribute="height" constant="150" id="gU0-Gn-Fac"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QaX-x1-JWr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QaX-x1-JWr">
                                 <rect key="frame" x="0.0" y="150" width="375" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="separatorInset" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="separatorInset" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardCell" id="LZY-et-uIq">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DashboardCell" id="LZY-et-uIq" customClass="DashboardTableViewCell" customModule="SwiftSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LZY-et-uIq" id="EYw-DP-nR0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-SU-1er">
+                                                    <rect key="frame" x="15" y="10" width="40" height="40"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="DyL-9T-zFf"/>
+                                                        <constraint firstAttribute="width" constant="40" id="QWi-pR-WZh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-oo-Q5u">
+                                                    <rect key="frame" x="65" y="34.5" width="277" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Diff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-XM-7U9">
+                                                    <rect key="frame" x="65" y="10" width="277" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LbB-oo-Q5u" firstAttribute="leading" secondItem="jhP-SU-1er" secondAttribute="trailing" constant="10" id="2sV-px-L1M"/>
+                                                <constraint firstAttribute="trailing" secondItem="LbB-oo-Q5u" secondAttribute="trailing" id="5DO-ev-G6L"/>
+                                                <constraint firstItem="ITc-XM-7U9" firstAttribute="leading" secondItem="jhP-SU-1er" secondAttribute="trailing" constant="10" id="IEp-Ad-QJ7"/>
+                                                <constraint firstItem="jhP-SU-1er" firstAttribute="top" secondItem="EYw-DP-nR0" secondAttribute="top" constant="10" id="NuY-Od-jd5"/>
+                                                <constraint firstAttribute="trailing" secondItem="ITc-XM-7U9" secondAttribute="trailing" id="QCv-e9-Ujd"/>
+                                                <constraint firstItem="ITc-XM-7U9" firstAttribute="top" secondItem="EYw-DP-nR0" secondAttribute="top" constant="10" id="bYz-RD-pU9"/>
+                                                <constraint firstItem="jhP-SU-1er" firstAttribute="leading" secondItem="EYw-DP-nR0" secondAttribute="leading" constant="15" id="e1j-Xv-Aak"/>
+                                                <constraint firstAttribute="bottom" secondItem="LbB-oo-Q5u" secondAttribute="bottom" constant="9.5" id="gym-2C-5C5"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewIcon" destination="jhP-SU-1er" id="J31-uD-Mx1"/>
+                                            <outlet property="lbeSubject" destination="ITc-XM-7U9" id="WSq-yC-GZl"/>
+                                            <outlet property="lbeTags" destination="LbB-oo-Q5u" id="eqO-D3-Bvm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="XHH-Pm-f2g" id="b0G-cl-VDg"/>
-                                    <outlet property="delegate" destination="XHH-Pm-f2g" id="AZp-dK-TdA"/>
+                                    <outlet property="delegate" destination="XHH-Pm-f2g" id="1vC-6q-70e"/>
                                 </connections>
                             </tableView>
                         </subviews>
