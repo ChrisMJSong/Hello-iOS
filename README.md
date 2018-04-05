@@ -2,7 +2,7 @@
 
 > This is sample project on swift.
 
-![Build Status](https://travis-ci.org/ChrisMJSong/SwiftSample.svg?branch=master)![Platform](https://img.shields.io/badge/platforms-iOS%209.0+-blue.svg)
+[![Build Status](https://travis-ci.org/ChrisMJSong/Hello-iOS.svg?branch=master)](https://travis-ci.org/ChrisMJSong/Hello-iOS) ![license](https://img.shields.io/github/license/mashape/apistatus.svg) ![platforms](https://img.shields.io/badge/platforms-iOS%209.0%2B-blue.svg)
 
 This is sample project on swift. This project will show code styles through some sample code .
 
