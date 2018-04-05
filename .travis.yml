@@ -4,4 +4,4 @@ xcode_project: SwiftSample.xcworkspace
 xcode_scheme: SwiftSample
 
 before_install:
-- pod install --repo-update # if want latest pod library, append repo update. 
+- pod update
