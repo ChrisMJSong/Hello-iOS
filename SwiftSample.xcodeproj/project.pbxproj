@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		81132711A3409B5EAC0A9563 /* Pods_SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */; };
+		8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60120768DB000D4C807 /* Arbitrager.xcassets */; };
+		8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60220768DB000D4C807 /* Arbitrager.storyboard */; };
+		8342F61620768DB000D4C807 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60820768DB000D4C807 /* Extensions.swift */; };
+		8342F61720768DB000D4C807 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60920768DB000D4C807 /* NetworkManager.swift */; };
+		8342F61820768DB000D4C807 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60A20768DB000D4C807 /* UserDataManager.swift */; };
+		8342F61920768DB000D4C807 /* CryptoCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60C20768DB000D4C807 /* CryptoCardTableViewCell.swift */; };
+		8342F61A20768DB000D4C807 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60D20768DB000D4C807 /* HomeViewController.swift */; };
+		8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60E20768DB000D4C807 /* TradeViewController.storyboard */; };
+		8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60F20768DB000D4C807 /* TradeViewController.swift */; };
+		8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F61120768DB000D4C807 /* SettingsViewController.swift */; };
 		837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE7F20753FB900DFA216 /* DashboardViewController.swift */; };
 		837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE812075416400DFA216 /* DashboardTableViewModel.swift */; };
 		837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE83207542E200DFA216 /* DashboardItem.swift */; };
@@ -50,6 +60,16 @@
 /* Begin PBXFileReference section */
 		0E84550D6294FB3BBB0E240F /* Pods_SwiftSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8342F60120768DB000D4C807 /* Arbitrager.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arbitrager.xcassets; sourceTree = "<group>"; };
+		8342F60320768DB000D4C807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Arbitrager.storyboard; sourceTree = "<group>"; };
+		8342F60820768DB000D4C807 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8342F60920768DB000D4C807 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8342F60A20768DB000D4C807 /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		8342F60C20768DB000D4C807 /* CryptoCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCardTableViewCell.swift; sourceTree = "<group>"; };
+		8342F60D20768DB000D4C807 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8342F60E20768DB000D4C807 /* TradeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TradeViewController.storyboard; sourceTree = "<group>"; };
+		8342F60F20768DB000D4C807 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		8342F61120768DB000D4C807 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		837EEE7F20753FB900DFA216 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		837EEE812075416400DFA216 /* DashboardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewModel.swift; sourceTree = "<group>"; };
 		837EEE83207542E200DFA216 /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
@@ -122,6 +142,63 @@
 				C0E73373DD7012509DF2F9B7 /* Pods-SwiftSampleUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8342F5FF20768DB000D4C807 /* SubProjects */ = {
+			isa = PBXGroup;
+			children = (
+				8342F60020768DB000D4C807 /* Arbitrager */,
+			);
+			path = SubProjects;
+			sourceTree = "<group>";
+		};
+		8342F60020768DB000D4C807 /* Arbitrager */ = {
+			isa = PBXGroup;
+			children = (
+				8342F60120768DB000D4C807 /* Arbitrager.xcassets */,
+				8342F60220768DB000D4C807 /* Arbitrager.storyboard */,
+				8342F60620768DB000D4C807 /* Classes */,
+			);
+			path = Arbitrager;
+			sourceTree = "<group>";
+		};
+		8342F60620768DB000D4C807 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8342F60720768DB000D4C807 /* Common */,
+				8342F60B20768DB000D4C807 /* Home */,
+				8342F61020768DB000D4C807 /* Settings */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8342F60720768DB000D4C807 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8342F60820768DB000D4C807 /* Extensions.swift */,
+				8342F60920768DB000D4C807 /* NetworkManager.swift */,
+				8342F60A20768DB000D4C807 /* UserDataManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8342F60B20768DB000D4C807 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8342F60C20768DB000D4C807 /* CryptoCardTableViewCell.swift */,
+				8342F60D20768DB000D4C807 /* HomeViewController.swift */,
+				8342F60E20768DB000D4C807 /* TradeViewController.storyboard */,
+				8342F60F20768DB000D4C807 /* TradeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8342F61020768DB000D4C807 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8342F61120768DB000D4C807 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		837EEE7E20753FB900DFA216 /* Dashboard */ = {
@@ -218,6 +295,7 @@
 		83EBFD28207281F900D6A96F /* SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				8342F5FF20768DB000D4C807 /* SubProjects */,
 				83D895FC2073BBF7000DA172 /* Classes */,
 				83D895F82073BBF7000DA172 /* Resources */,
 				83A3E1EF2074E03800392197 /* fastlane */,
@@ -363,8 +441,11 @@
 			files = (
 				83D896072073EF63000DA172 /* imgLion.gif in Resources */,
 				83EBFD34207281F900D6A96F /* LaunchScreen.storyboard in Resources */,
+				8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */,
 				83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */,
 				83EBFD31207281F900D6A96F /* Assets.xcassets in Resources */,
+				8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */,
+				8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */,
 				83EBFD2F207281F900D6A96F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,13 +587,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8342F61720768DB000D4C807 /* NetworkManager.swift in Sources */,
 				83D896022073D6BD000DA172 /* IntroViewController.swift in Sources */,
+				8342F61820768DB000D4C807 /* UserDataManager.swift in Sources */,
+				8342F61920768DB000D4C807 /* CryptoCardTableViewCell.swift in Sources */,
 				83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */,
 				837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */,
+				8342F61620768DB000D4C807 /* Extensions.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,
 				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
+				8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */,
 				837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */,
 				837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */,
+				8342F61A20768DB000D4C807 /* HomeViewController.swift in Sources */,
+				8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +638,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8342F60220768DB000D4C807 /* Arbitrager.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8342F60320768DB000D4C807 /* Base */,
+			);
+			name = Arbitrager.storyboard;
+			sourceTree = "<group>";
+		};
 		83EBFD2D207281F900D6A96F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -617,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -668,7 +764,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
