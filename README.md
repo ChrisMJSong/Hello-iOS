@@ -1,4 +1,4 @@
-# ![Alt Subject icon](https://github.com/ChrisMJSong/SwiftSample/blob/master/SwiftSample/Assets.xcassets/AppIcon.appiconset/Icon-29.png?raw=true) Swift Sample
+# ![Alt Subject icon](https://github.com/ChrisMJSong/SwiftSample/blob/master/SwiftSample/Assets.xcassets/AppIcon.appiconset/Icon-29.png?raw=true) Hello iOS
 
 > This is sample project on swift.
 
