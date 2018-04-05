@@ -8,11 +8,13 @@
 
 import UIKit
 import SwiftyGif
+import YLProgressBar
 
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var imageViewLogo: UIImageView!
-    let moveDeleay = 2
+    @IBOutlet weak var viewProgress: YLProgressBar!
+    let moveDeleay: Double = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +24,27 @@ class IntroViewController: UIViewController {
         let gif = UIImage.init(gifName: "imgLion")
         imageViewLogo.setGifImage(gif)
         
-        // move to next page
-        DispatchQueue.main.asyncAfter(deadline: (.now() + 2), execute: {
-              self.performSegue(withIdentifier: "SegueDashboard", sender: nil)
-        })
+        // Start fake animating
+        viewProgress.type = .rounded
+        viewProgress.progress = 0
+        
+        // ProgressTimer
+        Timer.scheduledTimer(withTimeInterval: 1.0/10, repeats: true) { (timer) in
+            let value: CGFloat = CGFloat((1.0/10) / self.moveDeleay);
+            let targetProgress = self.viewProgress.progress + value
+            print(targetProgress)
+            self.viewProgress.progress = targetProgress
+            
+            if self.viewProgress.progress >= 1 {
+                // destroy self
+                timer.invalidate()
+                // TODO: play complete animation
+                // Go to dashboard after 0.5 sec
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    self.performSegue(withIdentifier: "SegueDashboard", sender: nil)
+                })
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

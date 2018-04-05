@@ -40,11 +40,28 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USx-RM-bIS" customClass="YLProgressBar">
+                                <rect key="frame" x="28" y="597" width="319" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cNM-SD-nD3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackTintColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
+                                        <color key="value" red="0.25946119429999998" green="0.210164398" blue="0.18658778070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.9990275502204895" green="0.89185702800750732" blue="0.023125579580664635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="USx-RM-bIS" secondAttribute="bottom" constant="50" id="1Bi-iV-0La"/>
                             <constraint firstItem="1Ci-bg-KoE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cY-dT-Cod"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="USx-RM-bIS" secondAttribute="trailing" constant="28" id="AkP-5Z-igL"/>
                             <constraint firstItem="ZJF-lP-coX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihy-uo-6R4"/>
+                            <constraint firstItem="USx-RM-bIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="JmG-TP-gzW"/>
                             <constraint firstItem="1Ci-bg-KoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Zau-ZH-hmw"/>
                             <constraint firstItem="ZJF-lP-coX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mMW-Dl-sun"/>
                         </constraints>
@@ -53,6 +70,7 @@
                     <navigationItem key="navigationItem" id="rqC-7X-JbK"/>
                     <connections>
                         <outlet property="imageViewLogo" destination="ZJF-lP-coX" id="pYx-bt-gg0"/>
+                        <outlet property="viewProgress" destination="USx-RM-bIS" id="8Am-Tz-NQT"/>
                         <segue destination="XHH-Pm-f2g" kind="presentation" identifier="SegueDashboard" modalTransitionStyle="crossDissolve" id="mR1-Mu-UXp"/>
                     </connections>
                 </viewController>
