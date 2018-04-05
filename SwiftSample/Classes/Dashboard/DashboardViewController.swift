@@ -40,6 +40,7 @@ extension DashboardViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseCellIdentifier) as! DashboardTableViewCell
+        cell.updateItem(tableViewModel.items[indexPath.row])
         return cell
     }
 }
