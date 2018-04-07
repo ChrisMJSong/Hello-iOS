@@ -32,7 +32,7 @@ class IntroViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0/10, repeats: true) { (timer) in
             let value: CGFloat = CGFloat((1.0/10) / self.moveDeleay);
             let targetProgress = self.viewProgress.progress + value
-            print(targetProgress)
+            
             self.viewProgress.progress = targetProgress
             
             if self.viewProgress.progress >= 1 {
