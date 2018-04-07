@@ -15,6 +15,7 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var imageViewLogo: UIImageView!
     @IBOutlet weak var viewProgress: YLProgressBar!
     let moveDeleay: Double = 2
+    var startedTime = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +30,13 @@ class IntroViewController: UIViewController {
         viewProgress.progress = 0
         
         // ProgressTimer
-        Timer.scheduledTimer(withTimeInterval: 1.0/10, repeats: true) { (timer) in
-            let value: CGFloat = CGFloat((1.0/10) / self.moveDeleay);
-            let targetProgress = self.viewProgress.progress + value
+        Timer.scheduledTimer(withTimeInterval: 1.0/30, repeats: true) { (timer) in
+            let elapsedTime = Date().timeIntervalSince(self.startedTime)
+            let targetProgress = CGFloat(elapsedTime)
             
             self.viewProgress.progress = targetProgress
             
-            if self.viewProgress.progress >= 1 {
+            if targetProgress >= 1 {
                 // destroy self
                 timer.invalidate()
                 // TODO: play complete animation
