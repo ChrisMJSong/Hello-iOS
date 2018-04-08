@@ -18,6 +18,9 @@
 		8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60E20768DB000D4C807 /* TradeViewController.storyboard */; };
 		8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60F20768DB000D4C807 /* TradeViewController.swift */; };
 		8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F61120768DB000D4C807 /* SettingsViewController.swift */; };
+		83634774207A4F6700DF32E2 /* MapHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634773207A4F6700DF32E2 /* MapHomeViewController.swift */; };
+		83634776207A4FAB00DF32E2 /* MapSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83634775207A4FAB00DF32E2 /* MapSample.storyboard */; };
+		83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634777207A5F6600DF32E2 /* AboutViewController.swift */; };
 		837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE7F20753FB900DFA216 /* DashboardViewController.swift */; };
 		837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE812075416400DFA216 /* DashboardTableViewModel.swift */; };
 		837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE83207542E200DFA216 /* DashboardItem.swift */; };
@@ -71,6 +74,9 @@
 		8342F60E20768DB000D4C807 /* TradeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TradeViewController.storyboard; sourceTree = "<group>"; };
 		8342F60F20768DB000D4C807 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		8342F61120768DB000D4C807 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		83634773207A4F6700DF32E2 /* MapHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHomeViewController.swift; sourceTree = "<group>"; };
+		83634775207A4FAB00DF32E2 /* MapSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapSample.storyboard; sourceTree = "<group>"; };
+		83634777207A5F6600DF32E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		837EEE7F20753FB900DFA216 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		837EEE812075416400DFA216 /* DashboardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewModel.swift; sourceTree = "<group>"; };
 		837EEE83207542E200DFA216 /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8342F60020768DB000D4C807 /* Arbitrager */,
+				83634772207A4F6700DF32E2 /* MapSample */,
 			);
 			path = SubProjects;
 			sourceTree = "<group>";
@@ -203,6 +210,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		83634772207A4F6700DF32E2 /* MapSample */ = {
+			isa = PBXGroup;
+			children = (
+				83634773207A4F6700DF32E2 /* MapHomeViewController.swift */,
+				83634775207A4FAB00DF32E2 /* MapSample.storyboard */,
+			);
+			path = MapSample;
+			sourceTree = "<group>";
+		};
 		837EEE7E20753FB900DFA216 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				8394A3092078F7140084F5BB /* ProjectViewController.swift */,
+				83634777207A5F6600DF32E2 /* AboutViewController.swift */,
 			);
 			path = ProjectViewer;
 			sourceTree = "<group>";
@@ -455,6 +472,7 @@
 				8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */,
 				83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */,
 				83EBFD31207281F900D6A96F /* Assets.xcassets in Resources */,
+				83634776207A4FAB00DF32E2 /* MapSample.storyboard in Resources */,
 				8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */,
 				8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */,
 				83EBFD2F207281F900D6A96F /* Main.storyboard in Resources */,
@@ -607,9 +625,11 @@
 				837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */,
 				8342F61620768DB000D4C807 /* Extensions.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,
+				83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */,
 				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
 				8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */,
 				837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */,
+				83634774207A4F6700DF32E2 /* MapHomeViewController.swift in Sources */,
 				837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */,
 				8342F61A20768DB000D4C807 /* HomeViewController.swift in Sources */,
 				8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */,
