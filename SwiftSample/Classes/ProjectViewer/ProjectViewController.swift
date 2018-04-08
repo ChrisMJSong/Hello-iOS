@@ -37,6 +37,20 @@ class ProjectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "SegueAbout"?:
+            do {
+                let firstView = initViewController as? ProjectInitNavigationViewController
+                let destView = segue.destination as! AboutViewController
+                if let description = firstView?.projectDescription {
+                    destView.descript = description()
+                }
+            }
+        default: break
+        }
+    }
+    
     /// Dismiss view controller
     ///
     /// - Parameter sender: UIButton
