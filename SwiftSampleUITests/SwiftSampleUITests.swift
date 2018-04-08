@@ -35,6 +35,16 @@ class SwiftSampleUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .table).element.swipeDown()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["#Swift, #JSON"]/*[[".cells.staticTexts[\"#Swift, #JSON\"]",".staticTexts[\"#Swift, #JSON\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let marketPriceNavigationBar = app.navigationBars["Market Price"]
+        marketPriceNavigationBar.buttons["Edit"].tap()
+        marketPriceNavigationBar.buttons["Done"].tap()
+        marketPriceNavigationBar.buttons["Refresh"].tap()
+        app.buttons["END OF TOUR"].tap()
+        
     }
     
 }
