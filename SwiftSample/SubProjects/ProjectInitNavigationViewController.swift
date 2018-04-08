@@ -24,8 +24,9 @@ class ProjectInitNavigationViewController: UINavigationController {
     /// Return a string that viewcontroller description
     ///
     /// - Returns: description string
-    func description() -> String {
+    func projectDescription() -> String {
         // it will be override
+        return ""
     }
 
 }
