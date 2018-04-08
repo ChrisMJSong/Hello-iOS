@@ -21,6 +21,8 @@
 		83634774207A4F6700DF32E2 /* MapHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634773207A4F6700DF32E2 /* MapHomeViewController.swift */; };
 		83634776207A4FAB00DF32E2 /* MapSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83634775207A4FAB00DF32E2 /* MapSample.storyboard */; };
 		83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634777207A5F6600DF32E2 /* AboutViewController.swift */; };
+		8363477A207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */; };
+		8363477C207A64F700DF32E2 /* ArbitragerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */; };
 		837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE7F20753FB900DFA216 /* DashboardViewController.swift */; };
 		837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE812075416400DFA216 /* DashboardTableViewModel.swift */; };
 		837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE83207542E200DFA216 /* DashboardItem.swift */; };
@@ -77,6 +79,8 @@
 		83634773207A4F6700DF32E2 /* MapHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHomeViewController.swift; sourceTree = "<group>"; };
 		83634775207A4FAB00DF32E2 /* MapSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapSample.storyboard; sourceTree = "<group>"; };
 		83634777207A5F6600DF32E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInitNavigationViewController.swift; sourceTree = "<group>"; };
+		8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitragerInitViewController.swift; sourceTree = "<group>"; };
 		837EEE7F20753FB900DFA216 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		837EEE812075416400DFA216 /* DashboardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewModel.swift; sourceTree = "<group>"; };
 		837EEE83207542E200DFA216 /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			children = (
 				8342F60020768DB000D4C807 /* Arbitrager */,
 				83634772207A4F6700DF32E2 /* MapSample */,
+				83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */,
 			);
 			path = SubProjects;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				8342F61120768DB000D4C807 /* SettingsViewController.swift */,
+				8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -622,6 +628,8 @@
 				8342F61920768DB000D4C807 /* CryptoCardTableViewCell.swift in Sources */,
 				83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */,
 				8394A30A2078F7140084F5BB /* ProjectViewController.swift in Sources */,
+				8363477C207A64F700DF32E2 /* ArbitragerInitViewController.swift in Sources */,
+				8363477A207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift in Sources */,
 				837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */,
 				8342F61620768DB000D4C807 /* Extensions.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,

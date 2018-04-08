@@ -19,7 +19,7 @@
         <!--Market Price-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Arbitrager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +76,7 @@
                                 <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.90980392156862744" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="BX0-gr-WEa" customClass="CryptoCardTableViewCell" customModule="Arbitrager" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="BX0-gr-WEa" customClass="CryptoCardTableViewCell" customModule="SwiftSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BX0-gr-WEa" id="du8-Of-eWo">
@@ -147,7 +147,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-v0-F0u" userLabel="Body">
                                                             <rect key="frame" x="0.0" y="64" width="335" height="81"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oef-Ua-4ks" userLabel="Buy" customClass="CoinPriceView" customModule="Arbitrager" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oef-Ua-4ks" userLabel="Buy" customClass="CoinPriceView" customModule="SwiftSample" customModuleProvider="target">
                                                                     <rect key="frame" x="8" y="8" width="144.5" height="68"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoCEX" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-2L-KHc">
@@ -199,7 +199,7 @@
                                                                         <outlet property="lbeLastUsdPrice" destination="AEG-qo-Hpo" id="sPx-ew-4HF"/>
                                                                     </connections>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-eq-mwx" userLabel="Sell" customClass="CoinPriceView" customModule="Arbitrager" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-eq-mwx" userLabel="Sell" customClass="CoinPriceView" customModule="SwiftSample" customModuleProvider="target">
                                                                     <rect key="frame" x="182.5" y="8" width="144.5" height="68"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoCoinone" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-Yt-TFX">
@@ -392,7 +392,7 @@
         <!--Home-->
         <scene sceneID="mtR-K2-9UQ">
             <objects>
-                <navigationController id="mJT-Gg-C0p" sceneMemberID="viewController">
+                <navigationController id="mJT-Gg-C0p" customClass="ArbitragerInitViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="Xeu-vo-QmO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUz-bF-XVh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
