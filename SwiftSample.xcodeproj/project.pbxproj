@@ -11,6 +11,7 @@
 		830F1A21207BB369003DB47F /* OpenChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F1A20207BB369003DB47F /* OpenChat.storyboard */; };
 		830F1A2B207BB3CB003DB47F /* OpenChatHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */; };
 		830F1A2C207BB3CB003DB47F /* OpenChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */; };
+		8342242C207BCA84009C46A3 /* OpenChatInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342242B207BCA84009C46A3 /* OpenChatInitViewController.swift */; };
 		8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60120768DB000D4C807 /* Arbitrager.xcassets */; };
 		8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60220768DB000D4C807 /* Arbitrager.storyboard */; };
 		8342F61620768DB000D4C807 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60820768DB000D4C807 /* Extensions.swift */; };
@@ -70,6 +71,7 @@
 		830F1A20207BB369003DB47F /* OpenChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenChat.storyboard; sourceTree = "<group>"; };
 		830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenChatHomeViewController.swift; sourceTree = "<group>"; };
 		830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenChatViewController.swift; sourceTree = "<group>"; };
+		8342242B207BCA84009C46A3 /* OpenChatInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatInitViewController.swift; sourceTree = "<group>"; };
 		8342F60120768DB000D4C807 /* Arbitrager.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arbitrager.xcassets; sourceTree = "<group>"; };
 		8342F60320768DB000D4C807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Arbitrager.storyboard; sourceTree = "<group>"; };
 		8342F60820768DB000D4C807 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */,
 				830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */,
+				8342242B207BCA84009C46A3 /* OpenChatInitViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				837EEE8020753FB900DFA216 /* DashboardViewController.swift in Sources */,
 				8342F61620768DB000D4C807 /* Extensions.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,
+				8342242C207BCA84009C46A3 /* OpenChatInitViewController.swift in Sources */,
 				83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */,
 				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
 				8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */,
