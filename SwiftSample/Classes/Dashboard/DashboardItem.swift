@@ -11,7 +11,7 @@ import UIKit
 class DashboardItem: NSObject {
     
     enum SkillTag: Int {
-        case swift = 0, objc, json, tcpip, gis
+        case swift = 0, objc, json, tcpip, gis, realtimeDB, fcm
         
         /// Return a string that skill name
         ///
@@ -23,6 +23,8 @@ class DashboardItem: NSObject {
             case .json:     return "JSON"
             case .tcpip:    return "TCP/IP"
             case .gis:      return "GIS"
+            case .realtimeDB:      return "Real-Time DB"
+            case .fcm:      return "FCM"
             }
         }
     }
