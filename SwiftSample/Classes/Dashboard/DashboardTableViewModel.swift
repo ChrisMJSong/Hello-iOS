@@ -13,7 +13,9 @@ class DashboardTableViewModel: NSObject {
     
     override init() {
         let item1 = DashboardItem.init(id: "com.ChrisMJSong.Arbitrager", name: "5만불가즈아", tags: [.swift, .json], storyboardName: "Arbitrager", image: #imageLiteral(resourceName: "IcoArbitrager"))
+        let item2 = DashboardItem.init(id: "com.ChrisMJSong.OpenChat", name: "오픈 채팅", tags: [.swift, .json, .realtimeDB, .fcm], storyboardName: "OpenChat", image: #imageLiteral(resourceName: "icoOpenChat"))
         items.append(item1)
+        items.append(item2)
     }
     
     /// Add item
