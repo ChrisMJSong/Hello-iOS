@@ -13,6 +13,7 @@ class ProjectViewController: UIViewController {
     @IBOutlet weak var viewProjectMain: UIView!
     @IBOutlet weak var viewBottomMenu: UIView!
     var initViewController: UINavigationController?
+    var storyboardName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class ProjectViewController: UIViewController {
         // Do any additional setup after loading the view.
         // FIXME: Only load default project
         
-        let storyboard = UIStoryboard.init(name: "Arbitrager", bundle: nil)
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
         initViewController = storyboard.instantiateInitialViewController() as? UINavigationController
         var frame = self.view.frame
         frame.size.height -= self.viewBottomMenu.frame.height
