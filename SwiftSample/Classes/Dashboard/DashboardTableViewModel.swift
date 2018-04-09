@@ -12,7 +12,7 @@ class DashboardTableViewModel: NSObject {
     var items = Array<DashboardItem>()
     
     override init() {
-        let item1 = DashboardItem.init(id: "com.ChrisMJSong.Arbitrager", name: "5만불가즈아", tags: [.swift, .json], image: #imageLiteral(resourceName: "IcoArbitrager"))
+        let item1 = DashboardItem.init(id: "com.ChrisMJSong.Arbitrager", name: "5만불가즈아", tags: [.swift, .json], storyboardName: "Arbitrager", image: #imageLiteral(resourceName: "IcoArbitrager"))
         items.append(item1)
     }
     

@@ -33,10 +33,11 @@ class DashboardItem: NSObject {
     var tags: Array<SkillTag> = Array()
     var image: UIImage?
     var id: String
+    var storyboardName: String!
     
     /// Default init
     override convenience init() {
-        self.init(id: "", name: "", tags: Array<SkillTag>(), image: nil)
+        self.init(id: "", name: "", tags: Array<SkillTag>(), storyboardName: "", image: nil)
     }
     
     /// Init with item
@@ -45,11 +46,12 @@ class DashboardItem: NSObject {
     ///   - id: Dd string
     ///   - name: Name string
     ///   - image: Icon image (optional)
-    init(id: String, name: String, tags: Array<SkillTag>, image: UIImage?) {
+    init(id: String, name: String, tags: Array<SkillTag>, storyboardName: String, image: UIImage?) {
         self.id     = id
         self.name   = name
         self.tags   = tags
         self.image  = image
+        self.storyboardName = storyboardName
     }
     
     /// Return a string that tag list
