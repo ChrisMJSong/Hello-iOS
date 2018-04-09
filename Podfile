@@ -9,6 +9,10 @@ project 'SwiftSample.xcodeproj'
 def shared_pods
   # Pods for all schems
   pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'ReSwift', '~> 4.0'
+  pod 'RxSwift', '~> 4.1'
   pod 'Fabric', '~> 1.7.2'
   pod 'Crashlytics', '~> 3.9.3'
   pod 'SwiftyGif', '~> 4.1'

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		81132711A3409B5EAC0A9563 /* Pods_SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */; };
+		830F1A21207BB369003DB47F /* OpenChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F1A20207BB369003DB47F /* OpenChat.storyboard */; };
+		830F1A2B207BB3CB003DB47F /* OpenChatHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */; };
+		830F1A2C207BB3CB003DB47F /* OpenChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */; };
 		8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60120768DB000D4C807 /* Arbitrager.xcassets */; };
 		8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60220768DB000D4C807 /* Arbitrager.storyboard */; };
 		8342F61620768DB000D4C807 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60820768DB000D4C807 /* Extensions.swift */; };
@@ -18,8 +21,6 @@
 		8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60E20768DB000D4C807 /* TradeViewController.storyboard */; };
 		8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60F20768DB000D4C807 /* TradeViewController.swift */; };
 		8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F61120768DB000D4C807 /* SettingsViewController.swift */; };
-		83634774207A4F6700DF32E2 /* MapHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634773207A4F6700DF32E2 /* MapHomeViewController.swift */; };
-		83634776207A4FAB00DF32E2 /* MapSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83634775207A4FAB00DF32E2 /* MapSample.storyboard */; };
 		83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634777207A5F6600DF32E2 /* AboutViewController.swift */; };
 		8363477A207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */; };
 		8363477C207A64F700DF32E2 /* ArbitragerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */; };
@@ -66,6 +67,9 @@
 /* Begin PBXFileReference section */
 		0E84550D6294FB3BBB0E240F /* Pods_SwiftSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E2DB7BC6F743F78C143D3E /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F1A20207BB369003DB47F /* OpenChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenChat.storyboard; sourceTree = "<group>"; };
+		830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenChatHomeViewController.swift; sourceTree = "<group>"; };
+		830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenChatViewController.swift; sourceTree = "<group>"; };
 		8342F60120768DB000D4C807 /* Arbitrager.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arbitrager.xcassets; sourceTree = "<group>"; };
 		8342F60320768DB000D4C807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Arbitrager.storyboard; sourceTree = "<group>"; };
 		8342F60820768DB000D4C807 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -76,8 +80,6 @@
 		8342F60E20768DB000D4C807 /* TradeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TradeViewController.storyboard; sourceTree = "<group>"; };
 		8342F60F20768DB000D4C807 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		8342F61120768DB000D4C807 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		83634773207A4F6700DF32E2 /* MapHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHomeViewController.swift; sourceTree = "<group>"; };
-		83634775207A4FAB00DF32E2 /* MapSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapSample.storyboard; sourceTree = "<group>"; };
 		83634777207A5F6600DF32E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInitNavigationViewController.swift; sourceTree = "<group>"; };
 		8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitragerInitViewController.swift; sourceTree = "<group>"; };
@@ -156,11 +158,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		830F1A1D207BB341003DB47F /* OpenChat */ = {
+			isa = PBXGroup;
+			children = (
+				830F1A28207BB3CB003DB47F /* Classes */,
+				830F1A20207BB369003DB47F /* OpenChat.storyboard */,
+			);
+			path = OpenChat;
+			sourceTree = "<group>";
+		};
+		830F1A28207BB3CB003DB47F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */,
+				830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8342F5FF20768DB000D4C807 /* SubProjects */ = {
 			isa = PBXGroup;
 			children = (
 				8342F60020768DB000D4C807 /* Arbitrager */,
-				83634772207A4F6700DF32E2 /* MapSample */,
+				830F1A1D207BB341003DB47F /* OpenChat */,
 				83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */,
 			);
 			path = SubProjects;
@@ -214,15 +234,6 @@
 				8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		83634772207A4F6700DF32E2 /* MapSample */ = {
-			isa = PBXGroup;
-			children = (
-				83634773207A4F6700DF32E2 /* MapHomeViewController.swift */,
-				83634775207A4FAB00DF32E2 /* MapSample.storyboard */,
-			);
-			path = MapSample;
 			sourceTree = "<group>";
 		};
 		837EEE7E20753FB900DFA216 /* Dashboard */ = {
@@ -473,12 +484,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F1A21207BB369003DB47F /* OpenChat.storyboard in Resources */,
 				83D896072073EF63000DA172 /* imgLion.gif in Resources */,
 				83EBFD34207281F900D6A96F /* LaunchScreen.storyboard in Resources */,
 				8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */,
 				83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */,
 				83EBFD31207281F900D6A96F /* Assets.xcassets in Resources */,
-				83634776207A4FAB00DF32E2 /* MapSample.storyboard in Resources */,
 				8342F61420768DB000D4C807 /* Arbitrager.storyboard in Resources */,
 				8342F61320768DB000D4C807 /* Arbitrager.xcassets in Resources */,
 				83EBFD2F207281F900D6A96F /* Main.storyboard in Resources */,
@@ -513,21 +524,29 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSampleUITests/Pods-SwiftSampleUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,21 +612,29 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,8 +663,9 @@
 				83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */,
 				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
 				8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */,
+				830F1A2C207BB3CB003DB47F /* OpenChatViewController.swift in Sources */,
 				837EEE84207542E200DFA216 /* DashboardItem.swift in Sources */,
-				83634774207A4F6700DF32E2 /* MapHomeViewController.swift in Sources */,
+				830F1A2B207BB3CB003DB47F /* OpenChatHomeViewController.swift in Sources */,
 				837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */,
 				8342F61A20768DB000D4C807 /* HomeViewController.swift in Sources */,
 				8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */,
