@@ -1,9 +1,9 @@
 //
 //  NetworkManager.swift
-//  ariapet
+//  Arbitrager
 //
-//  Created by Hoon on 2017. 6. 21..
-//  Copyright © 2017년 nemodream. All rights reserved.
+//  Created by Chris Song on 2017. 6. 21..
+//  Copyright © 2017년 Chris Song. All rights reserved.
 //
 
 import UIKit
@@ -110,8 +110,6 @@ final class NetworkManager: NSObject {
         SVProgressHUD.show()
         
         if let urlString = url.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed) {
-//        urlRequest.value(forHTTPHeaderField: "Content-Type")
-            
             let utilityQueue = DispatchQueue.global(qos: .utility)
             
             sessionManager?.request(urlString).responseJSON(queue: utilityQueue) {response in
@@ -146,8 +144,6 @@ final class NetworkManager: NSObject {
         SVProgressHUD.show()
         
         if let urlString = url.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed) {
-            //        urlRequest.value(forHTTPHeaderField: "Content-Type")
-            
             #if DEBUG
                 var params = ""
                 if let realParams = parameters {
@@ -227,7 +223,6 @@ final class NetworkManager: NSObject {
             }
         }
         
-        //        let httpHeader = ["Content-Type":"application/x-www-form-urlencoded; charset=utf-8"]
         sessionManager?.upload(multipartFormData: { (multiPartFormData) in
             if multiParts != nil{
                 for item in multiParts!{
@@ -308,17 +303,11 @@ final class NetworkManager: NSObject {
          self.performRequest(serverUrl.appending(api), completion)
     }
     
+    /// 금일 환율을 얻어온다.
+    ///
+    /// - Parameter completion: 클로저 객체
     func todayExchangeRate(completion: @escaping CompletionHandler) {
         let serverUrl = "https://api.manana.kr/exchange/rate/KRW/USD,KRW.json"
         self.performRequest(serverUrl, completion)
     }
-//    func sendDeviceInfo(id: String, autoYN: String, applicationType: String, completion: @escaping CompletionHandler) {
-//        let subURL = String(format: "/" + applicationType + "/init.do")
-//        let params: Parameters = [
-//            "id"    : id,
-//            "auto"  : autoYN,
-//            ]
-//        
-//        self.performRequest(kServerURL.appending(subURL), params, completion)
-//    }
 }

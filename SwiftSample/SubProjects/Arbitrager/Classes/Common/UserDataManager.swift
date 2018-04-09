@@ -1,6 +1,6 @@
 //
 //  UserDataManager.swift
-//  Arabayo
+//  Arbitrager
 //
 //  Created by Chris Song on 2017. 12. 2..
 //  Copyright © 2017년 Chris Song. All rights reserved.
