@@ -48,11 +48,8 @@ extension DashboardViewController: UITableViewDataSource {
 // MARK - UITableViewDelegate
 extension DashboardViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        // FIXME: Implementation project viewer
-//        let storyboard = UIStoryboard.init(name: "Arbitrager", bundle: nil)
-//        let initView = storyboard.instantiateInitialViewController()!
-//        self.present(initView, animated: true, completion: nil)
-        self.performSegue(withIdentifier: "SegueProjectViewer", sender: nil)
+        let selectedItem = tableViewModel.items[indexPath.row];
+        self.performSegue(withIdentifier: "SegueProjectViewer", sender: selectedItem)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
