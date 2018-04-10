@@ -9,11 +9,17 @@
 import UIKit
 
 class OpenChatTableViewModel: NSObject {
+    var room: OpenChatRoom!
+    
+    override init() {
+        self.room = OpenChatRoom()
+    }
+    
     /// return number of rows to tableview
     ///
     /// - Returns: item count
     func numberOfRowsInSection() -> Int {
-        return 0
+        return room.messages.count
     }
     
     /// return number of section to tableview

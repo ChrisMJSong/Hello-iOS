@@ -10,10 +10,27 @@ import UIKit
 
 class OpenChatViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var txvChatBox: UITextView!
+    @IBOutlet weak var constantChatBoxHeight: NSLayoutConstraint!
+    
+    let tableViewModel = OpenChatTableViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = tableViewModel.room.title
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +39,14 @@ class OpenChatViewController: UIViewController {
     }
     
 
+    @IBAction func addItem(_ sender: Any) {
+    }
+    
+    @IBAction func sendMessage(_ sender: Any) {
+        
+        // reset
+        txvChatBox.text = nil
+    }
 }
 
 // MARK - UITableViewDataSource
@@ -41,4 +66,9 @@ extension OpenChatViewController: UITableViewDataSource {
     }
 }
 
+// MARK: UITextViewDelegate
+extension OpenChatViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        print("chagned!")
+    }
 }
