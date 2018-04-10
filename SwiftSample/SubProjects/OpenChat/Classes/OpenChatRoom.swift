@@ -9,4 +9,11 @@
 import UIKit
 
 class OpenChatRoom: NSObject {
+    var messages: Array<OpenChatMessage> = Array()
+    var users: Array<OpenChatUser> = Array()
+    var title: String!
+    
+    override init() {
+        self.title = "Chat Room"
+    }
 }

@@ -9,5 +9,15 @@
 import UIKit
 
 class OpenChatUser: NSObject {
+    var id: String!
+    var name: String!
     
+    override convenience init() {
+        self.init(id: "unknown", name: "anonymouse")
+    }
+    
+    init(id:String, name: String) {
+        self.id     = id
+        self.name   = name
+    }
 }
