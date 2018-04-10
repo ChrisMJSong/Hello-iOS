@@ -31,6 +31,10 @@
 		837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EEE85207544D500DFA216 /* DashboardTableViewCell.swift */; };
 		8394A30A2078F7140084F5BB /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394A3092078F7140084F5BB /* ProjectViewController.swift */; };
 		83A3E20E2074E03800392197 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E1FD2074E03800392197 /* SnapshotHelper.swift */; };
+		83B7BFBD207D19DB003C6765 /* OpenChatTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7BFBC207D19DB003C6765 /* OpenChatTableViewModel.swift */; };
+		83B7BFBF207D1A4E003C6765 /* OpenChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7BFBE207D1A4E003C6765 /* OpenChatMessage.swift */; };
+		83B7BFC1207D1A64003C6765 /* OpenChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7BFC0207D1A64003C6765 /* OpenChatUser.swift */; };
+		83B7BFC3207D1A70003C6765 /* OpenChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7BFC2207D1A70003C6765 /* OpenChatRoom.swift */; };
 		83D895FD2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D895FE2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
 		83D895FF2073BBF7000DA172 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */; };
@@ -91,6 +95,10 @@
 		837EEE85207544D500DFA216 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		8394A3092078F7140084F5BB /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		83A3E1FD2074E03800392197 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		83B7BFBC207D19DB003C6765 /* OpenChatTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatTableViewModel.swift; sourceTree = "<group>"; };
+		83B7BFBE207D1A4E003C6765 /* OpenChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatMessage.swift; sourceTree = "<group>"; };
+		83B7BFC0207D1A64003C6765 /* OpenChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatUser.swift; sourceTree = "<group>"; };
+		83B7BFC2207D1A70003C6765 /* OpenChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatRoom.swift; sourceTree = "<group>"; };
 		83D895FB2073BBF7000DA172 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83D896012073D6BD000DA172 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		83D896062073EF63000DA172 /* imgLion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imgLion.gif; sourceTree = "<group>"; };
@@ -175,6 +183,10 @@
 				830F1A29207BB3CB003DB47F /* OpenChatHomeViewController.swift */,
 				830F1A2A207BB3CB003DB47F /* OpenChatViewController.swift */,
 				8342242B207BCA84009C46A3 /* OpenChatInitViewController.swift */,
+				83B7BFBC207D19DB003C6765 /* OpenChatTableViewModel.swift */,
+				83B7BFC2207D1A70003C6765 /* OpenChatRoom.swift */,
+				83B7BFBE207D1A4E003C6765 /* OpenChatMessage.swift */,
+				83B7BFC0207D1A64003C6765 /* OpenChatUser.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -654,9 +666,11 @@
 			files = (
 				8342F61720768DB000D4C807 /* NetworkManager.swift in Sources */,
 				83D896022073D6BD000DA172 /* IntroViewController.swift in Sources */,
+				83B7BFBD207D19DB003C6765 /* OpenChatTableViewModel.swift in Sources */,
 				8342F61820768DB000D4C807 /* UserDataManager.swift in Sources */,
 				8342F61920768DB000D4C807 /* CryptoCardTableViewCell.swift in Sources */,
 				83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */,
+				83B7BFBF207D1A4E003C6765 /* OpenChatMessage.swift in Sources */,
 				8394A30A2078F7140084F5BB /* ProjectViewController.swift in Sources */,
 				8363477C207A64F700DF32E2 /* ArbitragerInitViewController.swift in Sources */,
 				8363477A207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift in Sources */,
@@ -664,6 +678,7 @@
 				8342F61620768DB000D4C807 /* Extensions.swift in Sources */,
 				83EBFD2A207281F900D6A96F /* AppDelegate.swift in Sources */,
 				8342242C207BCA84009C46A3 /* OpenChatInitViewController.swift in Sources */,
+				83B7BFC3207D1A70003C6765 /* OpenChatRoom.swift in Sources */,
 				83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */,
 				837EEE822075416400DFA216 /* DashboardTableViewModel.swift in Sources */,
 				8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */,
@@ -672,6 +687,7 @@
 				830F1A2B207BB3CB003DB47F /* OpenChatHomeViewController.swift in Sources */,
 				837EEE86207544D500DFA216 /* DashboardTableViewCell.swift in Sources */,
 				8342F61A20768DB000D4C807 /* HomeViewController.swift in Sources */,
+				83B7BFC1207D1A64003C6765 /* OpenChatUser.swift in Sources */,
 				8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

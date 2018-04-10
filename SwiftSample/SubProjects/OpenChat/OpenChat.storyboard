@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="229.59999999999999" y="15.742128935532236"/>
         </scene>
-        <!--View Controller-->
+        <!--Open Chat View Controller-->
         <scene sceneID="NHa-kD-bO9">
             <objects>
-                <viewController id="xgI-4f-WxS" sceneMemberID="viewController">
+                <viewController id="xgI-4f-WxS" customClass="OpenChatViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uhz-Hy-rmQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,6 +236,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xgI-4f-WxS" id="W6A-4i-WVT"/>
+                                    <outlet property="delegate" destination="xgI-4f-WxS" id="kDk-Wh-IPF"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlO-jh-gNo">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -282,10 +286,14 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="xgI-4f-WxS" eventType="touchUpInside" id="jiL-zC-fRQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMV-04-pL8">
                                         <rect key="frame" x="8" y="7" width="30" height="30"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="N7c-e1-Dbl"/>
                                             <constraint firstAttribute="width" constant="30" id="uJ4-DO-HIS"/>
                                         </constraints>
                                         <state key="normal" title="+"/>
@@ -298,6 +306,9 @@
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addItem:" destination="xgI-4f-WxS" eventType="touchUpInside" id="heu-Cn-hLi"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yQq-nn-trm">
                                         <rect key="frame" x="48" y="7" width="259" height="30"/>
@@ -320,19 +331,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="eGL-28-Vv6" firstAttribute="top" secondItem="7l6-s2-2Fh" secondAttribute="bottom" constant="6" id="4TN-yR-UE7"/>
                                     <constraint firstItem="7l6-s2-2Fh" firstAttribute="leading" secondItem="MlO-jh-gNo" secondAttribute="leading" id="6pc-g1-DB2"/>
                                     <constraint firstItem="gMV-04-pL8" firstAttribute="leading" secondItem="MlO-jh-gNo" secondAttribute="leading" constant="8" id="9nD-FV-oE3"/>
                                     <constraint firstItem="7l6-s2-2Fh" firstAttribute="top" secondItem="MlO-jh-gNo" secondAttribute="top" id="CUI-u3-Uh8"/>
-                                    <constraint firstItem="eGL-28-Vv6" firstAttribute="leading" secondItem="1pl-Qx-2d1" secondAttribute="trailing" constant="10" id="G16-gt-CzZ"/>
-                                    <constraint firstAttribute="height" constant="44" id="MqL-rq-jYA"/>
-                                    <constraint firstAttribute="bottom" secondItem="1pl-Qx-2d1" secondAttribute="bottom" constant="7" id="Pc2-kJ-5cd"/>
+                                    <constraint firstItem="yQq-nn-trm" firstAttribute="leading" secondItem="gMV-04-pL8" secondAttribute="trailing" constant="10" id="Eqz-Pa-Wdp"/>
                                     <constraint firstAttribute="bottom" secondItem="eGL-28-Vv6" secondAttribute="bottom" constant="7" id="Qne-zs-DVC"/>
                                     <constraint firstAttribute="trailing" secondItem="eGL-28-Vv6" secondAttribute="trailing" constant="8" id="cFH-AV-xb6"/>
                                     <constraint firstAttribute="bottom" secondItem="gMV-04-pL8" secondAttribute="bottom" constant="7" id="cXB-Qc-zuj"/>
-                                    <constraint firstItem="1pl-Qx-2d1" firstAttribute="top" secondItem="7l6-s2-2Fh" secondAttribute="bottom" constant="6" id="pSl-EE-NPZ"/>
-                                    <constraint firstItem="gMV-04-pL8" firstAttribute="top" secondItem="7l6-s2-2Fh" secondAttribute="bottom" constant="6" id="rr1-mQ-6XN"/>
-                                    <constraint firstItem="1pl-Qx-2d1" firstAttribute="leading" secondItem="gMV-04-pL8" secondAttribute="trailing" constant="10" id="uzS-zm-GaK"/>
+                                    <constraint firstItem="yQq-nn-trm" firstAttribute="top" secondItem="7l6-s2-2Fh" secondAttribute="bottom" constant="6" id="orI-jT-isp"/>
+                                    <constraint firstItem="eGL-28-Vv6" firstAttribute="leading" secondItem="yQq-nn-trm" secondAttribute="trailing" constant="10" id="pHs-J6-sAK"/>
+                                    <constraint firstAttribute="bottom" secondItem="yQq-nn-trm" secondAttribute="bottom" constant="7" id="vFN-vV-FEN"/>
                                     <constraint firstAttribute="trailing" secondItem="7l6-s2-2Fh" secondAttribute="trailing" id="viR-ES-jZk"/>
                                 </constraints>
                             </view>
@@ -349,6 +357,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uvx-iq-Hu7"/>
                     </view>
+                    <connections>
+                        <outlet property="constantChatBoxHeight" destination="Pxe-fa-cY4" id="Wor-xw-ti4"/>
+                        <outlet property="tableView" destination="EYZ-7F-VF8" id="iz6-IA-xwX"/>
+                        <outlet property="txvChatBox" destination="yQq-nn-trm" id="YNO-1x-Z6L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0J-ME-vtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
