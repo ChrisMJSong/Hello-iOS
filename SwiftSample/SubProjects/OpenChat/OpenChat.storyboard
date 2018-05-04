@@ -359,6 +359,7 @@
                     </view>
                     <connections>
                         <outlet property="constantChatBoxHeight" destination="Pxe-fa-cY4" id="Wor-xw-ti4"/>
+                        <outlet property="constraintChatInputViewBottom" destination="Voz-9I-2ei" id="roQ-Sg-ets"/>
                         <outlet property="tableView" destination="EYZ-7F-VF8" id="iz6-IA-xwX"/>
                         <outlet property="txvChatBox" destination="yQq-nn-trm" id="YNO-1x-Z6L"/>
                     </connections>

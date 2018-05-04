@@ -13,6 +13,7 @@ class OpenChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txvChatBox: UITextView!
     @IBOutlet weak var constantChatBoxHeight: NSLayoutConstraint!
+    @IBOutlet weak var constraintChatInputViewBottom: NSLayoutConstraint!
     
     let tableViewModel = OpenChatTableViewModel()
     
@@ -20,7 +21,7 @@ class OpenChatViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = tableViewModel.room.title
+        setup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +39,15 @@ class OpenChatViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setup() {
+        self.title = tableViewModel.room.title
+        
+        // add observer to scrollView up
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(_:)), name: .UIKeyboardWillChangeFrame, object: nil)
+    }
+    
 
     @IBAction func addItem(_ sender: Any) {
     }
@@ -46,6 +56,29 @@ class OpenChatViewController: UIViewController {
         
         // reset
         txvChatBox.text = nil
+    }
+    
+    
+    // MARK: Keyboard observer function
+    @objc func keyboardWillShow(_ notification: NSNotification) {
+    }
+    
+    @objc func keyboardWillHide(_ notification: NSNotification) {
+        
+    }
+    
+    @objc func keyboardWillChange(_ notification: NSNotification) {
+        let duration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let curve = notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! UInt
+        let curFrame = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        let targetFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let deltaY = targetFrame.origin.y - curFrame.origin.y
+        
+        constraintChatInputViewBottom.constant = deltaY
+        
+        UIView.animate(withDuration: duration, delay: 0, options: UIViewAnimationOptions(rawValue: curve), animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 }
 
