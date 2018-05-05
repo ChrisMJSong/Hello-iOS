@@ -8,10 +8,13 @@
 
 import UIKit
 
+var projectViewBottomMenuHeight: CGFloat = 0
+
 class ProjectViewController: UIViewController {
 
     @IBOutlet weak var viewProjectMain: UIView!
     @IBOutlet weak var viewBottomMenu: UIView!
+    @IBOutlet weak var constraintBottomMenuHeight: NSLayoutConstraint!
     var initViewController: UINavigationController?
     var storyboardName: String!
     
@@ -29,6 +32,7 @@ class ProjectViewController: UIViewController {
         self.view.addSubview((initViewController?.view)!)
         
         initViewController?.didMove(toParentViewController: self)
+        projectViewBottomMenuHeight = constraintBottomMenuHeight.constant
         
         self.view.bringSubview(toFront: self.viewBottomMenu)
     }

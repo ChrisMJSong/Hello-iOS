@@ -272,6 +272,7 @@
                         <viewLayoutGuide key="safeArea" id="bKj-36-REj"/>
                     </view>
                     <connections>
+                        <outlet property="constraintBottomMenuHeight" destination="dRi-ps-7Mq" id="gTA-JJ-e5R"/>
                         <outlet property="viewBottomMenu" destination="CFO-WM-IpY" id="Mr5-BL-JU0"/>
                     </connections>
                 </viewController>

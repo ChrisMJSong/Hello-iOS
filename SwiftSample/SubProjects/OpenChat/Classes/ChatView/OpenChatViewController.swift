@@ -74,7 +74,7 @@ class OpenChatViewController: UIViewController {
         let targetFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let deltaY = targetFrame.origin.y - curFrame.origin.y
         
-        constraintChatInputViewBottom.constant = deltaY
+        constraintChatInputViewBottom.constant = deltaY + projectViewBottomMenuHeight
         
         UIView.animate(withDuration: duration, delay: 0, options: UIViewAnimationOptions(rawValue: curve), animations: {
             self.view.layoutIfNeeded()
