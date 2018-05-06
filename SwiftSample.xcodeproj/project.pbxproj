@@ -21,6 +21,7 @@
 		8342F61B20768DB000D4C807 /* TradeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342F60E20768DB000D4C807 /* TradeViewController.storyboard */; };
 		8342F61C20768DB000D4C807 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F60F20768DB000D4C807 /* TradeViewController.swift */; };
 		8342F61D20768DB000D4C807 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342F61120768DB000D4C807 /* SettingsViewController.swift */; };
+		834B2B6D209F4CF2003FBCB5 /* OpenChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B2B6C209F4CF2003FBCB5 /* OpenChatMessageTableViewCell.swift */; };
 		83634778207A5F6600DF32E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634777207A5F6600DF32E2 /* AboutViewController.swift */; };
 		8363477A207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */; };
 		8363477C207A64F700DF32E2 /* ArbitragerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */; };
@@ -85,6 +86,7 @@
 		8342F60E20768DB000D4C807 /* TradeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TradeViewController.storyboard; sourceTree = "<group>"; };
 		8342F60F20768DB000D4C807 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		8342F61120768DB000D4C807 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		834B2B6C209F4CF2003FBCB5 /* OpenChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		83634777207A5F6600DF32E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		83634779207A63ED00DF32E2 /* ProjectInitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInitNavigationViewController.swift; sourceTree = "<group>"; };
 		8363477B207A64F700DF32E2 /* ArbitragerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitragerInitViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				83B7BFC8207D293B003C6765 /* OpenChatTableViewModel.swift */,
 				83B7BFC9207D293B003C6765 /* OpenChatUser.swift */,
 				83B7BFCA207D293B003C6765 /* OpenChatViewController.swift */,
+				834B2B6C209F4CF2003FBCB5 /* OpenChatMessageTableViewCell.swift */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				83D896022073D6BD000DA172 /* IntroViewController.swift in Sources */,
 				8342F61820768DB000D4C807 /* UserDataManager.swift in Sources */,
 				8342F61920768DB000D4C807 /* CryptoCardTableViewCell.swift in Sources */,
+				834B2B6D209F4CF2003FBCB5 /* OpenChatMessageTableViewCell.swift in Sources */,
 				83EBFD2C207281F900D6A96F /* ViewController.swift in Sources */,
 				83B7BFCE207D293C003C6765 /* OpenChatUser.swift in Sources */,
 				8394A30A2078F7140084F5BB /* ProjectViewController.swift in Sources */,
