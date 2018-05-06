@@ -15,6 +15,13 @@ class OpenChatTableViewModel: NSObject {
         self.room = OpenChatRoom()
     }
     
+    func addMessage(_ messageString: String) {
+        // FIXME: addTestUser
+        let testUser = OpenChatUser.init(id: "testid", name: "my name")
+        let message = OpenChatMessage.init(user: testUser, message: messageString)
+        room.addMessage(message)
+    }
+    
     /// return number of rows to tableview
     ///
     /// - Returns: item count

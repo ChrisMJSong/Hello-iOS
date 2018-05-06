@@ -54,6 +54,11 @@ class OpenChatViewController: UIViewController {
     
     @IBAction func sendMessage(_ sender: Any) {
         
+        if let text = txvChatBox.text {
+            tableViewModel.addMessage(text)
+            tableView.reloadData()
+        }
+        
         // reset
         txvChatBox.text = nil
     }

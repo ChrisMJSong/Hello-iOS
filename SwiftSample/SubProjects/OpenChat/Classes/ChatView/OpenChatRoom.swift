@@ -16,4 +16,8 @@ class OpenChatRoom: NSObject {
     override init() {
         self.title = "Chat Room"
     }
+    
+    func addMessage(_ message: OpenChatMessage) {
+        messages.append(message)
+    }
 }
