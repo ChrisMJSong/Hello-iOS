@@ -20,4 +20,8 @@ class OpenChatRoom: NSObject {
     func addMessage(_ message: OpenChatMessage) {
         messages.append(message)
     }
+    
+    func message(at index: Int) -> OpenChatMessage {
+        return messages[index];
+    }
 }

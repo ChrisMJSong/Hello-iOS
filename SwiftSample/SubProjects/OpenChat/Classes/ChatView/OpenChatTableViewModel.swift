@@ -15,6 +15,10 @@ class OpenChatTableViewModel: NSObject {
         self.room = OpenChatRoom()
     }
     
+    func message(at index: Int) -> OpenChatMessage {
+        return room.message(at: index)
+    }
+    
     func addMessage(_ messageString: String) {
         // FIXME: addTestUser
         let testUser = OpenChatUser.init(id: "testid", name: "my name")
