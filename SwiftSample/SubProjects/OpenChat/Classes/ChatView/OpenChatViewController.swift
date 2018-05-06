@@ -16,6 +16,7 @@ class OpenChatViewController: UIViewController {
     @IBOutlet weak var constraintChatInputViewBottom: NSLayoutConstraint!
     
     let tableViewModel = OpenChatTableViewModel()
+    static let kMyChatMessageCell = "MyMessageCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,8 +100,11 @@ extension OpenChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "")
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: OpenChatViewController.kMyChatMessageCell) as! OpenChatMessageTableViewCell
+        let index = indexPath.row
+        let message = tableViewModel.message(at: index)
+        cell.updateMessage(message)
+        return cell
     }
 }
 
